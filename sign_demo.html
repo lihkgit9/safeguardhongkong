@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>「護港安全 撐修例」大聯署</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="「護港安全 撐修例」大聯署">
+    <link rel="stylesheet" href="css/sign.css?v=1.1">
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfP9acUAAAAADkx49DJRe4In6EEpnI31tt0DTXr"></script>
+    <style>
+        .grecaptcha-badge {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+<div style="margin:0 auto; width: 0;height: 0;overflow: hidden"><img src="images/cover.jpg?v=1.0"></div>
+<section id="main" class="main">
+    <div class="desc-box">
+        <div class="desc-detail">
+            <div class="desc-important"><img src="images/zan.png"> 我哋支持主辦方嘅呼籲：</div>
+        </div>
+        <div class="language_toggle">
+            <span class="language_option"><a href="sign.html">中文</a></span>
+            <span class="language_option"><a href="sign_eng.html">English</a></span>
+        </div>
+        <div class="desc-brief">
+            <p class="desc-item"><img src="images/right.png"> <span>港人陳某在台灣殺人案泯滅人性。</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>本港《逃犯條例》存在漏洞，有逼切修改需要。</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>香港不應成為「避罪天堂」。</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>特區政府及司法機構有處理逃犯移交經驗。</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>修訂《逃犯條例》仍有多重把關。</span></p>
+        </div>
+    </div>
+    <form id='form1' name='form1' method='post' enctype="application/x-www-form-urlencoded">
+        <div class="bottom">
+            <section class="left">
+                <div class="user">
+                    <div class="table">
+                        <div class="table-cell user-th"><b>姓名</b></div>
+                        <div class="table-cell">
+                            <div><input class="name" type="text" name="username" required placeholder=""></div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-cell user-th"><b style="line-height: 1rem">身份證號<span style="font-size: .75rem">(前四位)</span></b></div>
+                        <div class="table-cell">
+                            <div><input class="name" type="text" name="hkid" required placeholder="" maxlength="4"></div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-cell user-th"><b>電話號碼</b></div>
+                        <div class="table-cell">
+                            <div><input class="name" type="text" name="tel" placeholder="選填"></div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-cell user-th"><b>驗證碼</b></div>
+                        <div class="table-cell">
+                            <div><input type="text" name="yzm" class="code" id="yzm" placeholder=""></div>
+                        </div>
+                        <div class="table-cell code-img-td">
+                            <img src="captcha.php" class="codenum" id="yzm_img" title="點擊刷新">
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="sector" value="0">
+                <button  id="submit-btn" class="submit-btn" type="button">提交簽名</button>
+                <div class="tip">* 所收集的個人資料僅供此次聯署活動專用。<br>感謝各位參與聯署，為確保數字真實可靠，我們會定期核實並剔除無效聯署。</div>
+            </section>
+        </div>
+    </form>
+</section>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/sign_demo.js?ver=1.0" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function(){
+        window.addEventListener('message', function (event) {
+            const data = JSON.parse(event.data);
+            if (event.origin !== data.parentOrigin) {
+                return
+            }
+            console.log('Parent page sent:' + data.msg);
+            console.log('Return height message:' + document.body.scrollHeight);
+            event.source.postMessage(document.body.scrollHeight, event.origin);
+        }, false);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+section,article,aside,header,footer,nav,dialog,figure{display:block;}
+input[type=button], input[type=submit], input[type=reset],select{
+	-webkit-appearance: none;
+}
+html,body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	background: #c4e3fd;
+}
+
+/*header start*/
+header{
+	max-width: 640px;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+header img{
+	width: 100%;
+}
+/*main start*/
+.main{
+	max-width: 640px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.main img{
+	width: 100%;
+}
+
+.main h1 {
+	margin: 20px auto;
+	text-align: center;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+}
+
+.main p {
+	text-indent: 2em;
+	text-align: justify;
+	margin: 10px;
+	line-height: 1.6em;
+}

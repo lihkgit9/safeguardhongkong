@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>「護港安全 撐修例」大聯署</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="「護港安全 撐修例」大聯署">
+    <link rel="stylesheet" href="css/sign_eng.css?v=1.0">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfP9acUAAAAADkx49DJRe4In6EEpnI31tt0DTXr"></script>
+    <style>
+        .grecaptcha-badge {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+<div style="margin:0 auto; width: 0;height: 0;overflow: hidden"><img src="images/cover.jpg?v=1.0"></div>
+<section id="main" class="main">
+    <div class="desc-box">
+        <div class="desc-detail">
+            <div class="desc-important"><img src="images/zan.png"> <span>We support this petition:</span>
+                
+        </div>
+        <div class="language_toggle"><span class="language_option" > <a href="sign.html">中文</a></span><span class="language_option" ><a href="sign_eng.html">English</a></span></div>
+
+        <div class="desc-brief">
+            <p class="desc-item"><img src="images/right.png"> <span>The murder committed in Taiwan by Hong Kong permanent resident, Chan Tong-kai, is a heinous crime which is devoid of humanity.</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>The Fugitive Offenders Ordinance currently contains loopholes and needs to be amended.</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>Hong Kong must not become a “safe haven for fugitives”.</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>The Hong Kong SAR government and judiciary have experience in handling cases involving extradition.</span></p>
+            <p class="desc-item"><img src="images/right.png"> <span>The amendments to the Fugitive Offenders Ordinance will include various safeguards.</span></p>
+        </div>
+    </div>
+    <form id='form1' name='form1' method='post' enctype="application/x-www-form-urlencoded">
+        <div class="bottom">
+            <section class="left">
+                <div class="user">
+                    <div class="table">
+                        <div class="table-cell user-th"><b>Name</b></div>
+                        <div class="table-cell">
+                            <div><input class="name" type="text" name="username" required placeholder=""></div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-cell user-th"><b >HKID No. <!-- <span style="font-size: .75rem">():</span> --></b></div>
+                        <div class="table-cell">
+                            <div><input class="name" type="text" name="hkid" required placeholder="First 4 digits" maxlength="4"></div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-cell user-th"><b>Telephone No.</b></div>
+                        <div class="table-cell">
+                            <div><input class="name" type="text" name="tel" placeholder="Optional"></div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table-cell user-th"><b>Verification Code</b></div>
+                        <div class="table-cell">
+                            <div><input type="text" name="yzm" class="code" id="yzm" placeholder=""></div>
+                        </div>
+                        <div class="table-cell code-img-td">
+                            <img src="captcha.php" class="codenum" id="yzm_img" title="Click to refresh">
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="sector" value="0">
+                <button  id="submit-btn" class="submit-btn" type="button">Submit Signature</button>
+                <div class="tip">* The personal data collected are only for the purpose of this joint signature.</div>
+            </section>
+        </div>
+    </form>
+</section>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/sign_eng.js?ver=2.0" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function(){
+        window.addEventListener('message', function (event) {
+            const data = JSON.parse(event.data);
+            if (event.origin !== data.parentOrigin) {
+                return
+            }
+            console.log('Parent page sent:' + data.msg);
+            console.log('Return height message:' + document.body.scrollHeight);
+            event.source.postMessage(document.body.scrollHeight, event.origin);
+        }, false);
+    });
+</script>
+</body>
+</html>

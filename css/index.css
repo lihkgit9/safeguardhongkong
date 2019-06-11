@@ -1,0 +1,431 @@
+@charset "utf-8";
+section, article, aside, header, footer, nav, dialog, figure {
+    display: block;
+}
+
+input[type=button], input[type=submit], input[type=reset], select {
+    -webkit-appearance: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #f3f7ff;
+    font-size: 16px;
+}
+
+/*header start*/
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header img {
+    max-width: 640px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*main start*/
+.main {
+    max-width: 640px;
+    margin: 0 auto 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.result-box {
+    background-color: #1a3288;
+    color: #fff;
+    text-align: center;
+}
+
+.result-box p {
+    margin: 0;
+    padding: 8px 0;
+}
+
+#total {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.desc-box {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.desc-detail {
+    color: #333;
+    padding: 5px 0;
+}
+
+.desc-important {
+    background-color: #6f8acd;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.desc-important img {
+    width: 6%;
+    padding: 5px 10px
+}
+
+.desc-item {
+    font-size: .975rem;
+    padding: 5px 0 5px 5px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.desc-item img {
+    width: 4%;
+    margin-right: 5px;
+}
+
+.desc-item span {
+    border-bottom: 1px dashed #697ec8;
+    padding-bottom: 5px;
+}
+
+.desc-info {
+    margin: 10px auto;
+    text-align: right;
+}
+
+#desc-show-detail {
+    font-size: .875rem;
+    color: #fff;
+    background-color: #08469e;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.bgcolor-1 {
+    background: #ac90bd;
+}
+
+.bgcolor-2 {
+    background: #5069ab;
+}
+
+.bgcolor-3 {
+    background: #584a7d;
+}
+
+.table {
+    display: table;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main > .table {
+    min-height: 100px;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: bottom;
+    border-bottom: 6px solid #fff;
+    color: #fff;
+}
+
+.table-th {
+    width: 70px;
+    text-align: center;
+    border-right: 6px solid #fff;
+}
+
+.table-th > * {
+    padding: 30px 0;
+}
+
+.table-th img {
+    height: 57px;
+}
+
+.table-txt {
+    font-size: 24px;
+    padding: 5px 24px;
+    letter-spacing: 3px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 35px 0;
+}
+
+.content-img {
+    display: block;
+    margin: 12px auto;
+    max-width: 580px;
+    width: 100%;
+}
+
+/*form bottom*/
+.bottom {
+    max-width: 560px;
+    font-size: 0;
+    position: relative;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.left, .right {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    font-size: 18px;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+.user {
+    margin: 40px auto;
+}
+
+.user-th {
+    font-size: 1rem;
+    width: 80px;
+    color: #333;
+    text-align: justify;
+}
+
+.user-th b {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.user-th b:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+.user .table-cell {
+    border: none;
+    padding: 5px 0;
+}
+
+.sector {
+    width: 100%;
+    height: 30px;
+    display: block;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.name,
+.code {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: .5em;
+    outline: none;
+    height: 2.6em;
+    min-width: 80px;
+    padding: .5em;
+    border: 1px solid #08469e;
+}
+
+.name:focus,
+.code:focus {
+    box-shadow: inset #08469e 0 0 5px 1px;
+}
+
+.code-img-td {
+    width: 80px;
+}
+
+.code-img-td img {
+    vertical-align: middle;
+    margin-left: .5em;
+}
+
+.submit-btn {
+    width: 60%;
+    min-width: 150px;
+    border-radius: .3em;
+    padding: .3em;
+    background: #08469e;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.tip {
+    color: #333333;
+    font-size: .825rem;
+    margin-top: 5px;
+}
+
+/*main footer*/
+.footer {
+    clear: both;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #08469e;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.social-share .social-share-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.share-section {
+    text-align: center;
+    font-size: 0;
+}
+
+.share-section > span {
+    font-size: 22px;
+    vertical-align: middle;
+    padding-right: 12px;
+    color: #404f92;
+}
+
+.share {
+    height: 66px;
+    width: 66px;
+    min-width: 30px;
+    min-height: 30px;
+    display: inline-block;
+}
+
+.facebook {
+    background-position-x: left;
+}
+
+.wechat {
+    background-position-x: center;
+}
+
+.sina {
+    background-position-x: right;
+}
+
+.share-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.share-mask > div {
+    display: table;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #fff;
+}
+
+.share-mask > div > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (max-width: 575.98px) {
+    .desc-important {
+        font-size: 1.15rem;
+    }
+
+    .main {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        margin-bottom: 2vw;
+    }
+
+    .title {
+        margin: 4.2vw auto;
+    }
+
+    .bottom {
+        margin: 0 auto;
+    }
+
+    .user {
+        margin: 0 auto;
+    }
+
+    .main > .table {
+        min-height: 0;
+    }
+
+    .table-th {
+        width: 6vw;
+    }
+
+    .table-th > * {
+        padding: 3.37vw 0;
+    }
+
+    .table-th img {
+        height: 6.4vw;
+    }
+
+    .table-txt {
+        font-size: 2.4vw;
+        padding: 5px 2.7vw;
+    }
+
+    .share {
+        height: 7.4vw;
+        width: 7.4vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .user {
+        max-width: 100%;
+    }
+
+    .right {
+        margin-top: 10px;
+    }
+
+    .table-txt {
+        font-size: 14px;
+    }
+}
